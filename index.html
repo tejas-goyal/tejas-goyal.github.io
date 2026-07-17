@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tejas Goyal</title>
+  <meta name="description" content="Tejas Goyal — master's student at Carnegie Mellon working on post-training and alignment for large language models." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <header class="header">
+      <div class="header-text">
+        <h1>Tejas Goyal</h1>
+        <p class="tagline">Post-training &amp; alignment for large language models · Carnegie Mellon</p>
+        <nav class="links">
+          <a href="Tejas_Goyal_CV.pdf">CV</a>
+          <span class="dot">·</span>
+          <a href="https://github.com/tejas-goyal">GitHub</a>
+          <span class="dot">·</span>
+          <a href="https://linkedin.com/in/tejas-goyal1">LinkedIn</a>
+          <span class="dot">·</span>
+          <a href="https://scholar.google.com/citations?user=4ZvBpj8AAAAJ&hl=en">Scholar</a>
+          <span class="dot">·</span>
+          <a href="mailto:tejasgoyal@cmu.edu">Email</a>
+        </nav>
+      </div>
+      <img class="avatar" src="IMG_7203.jpg" alt="Tejas Goyal" />
+    </header>
+
+    <section class="about">
+      <p>
+        I'm a master's student at Carnegie Mellon working on post-training and
+        alignment for large language models. Lately I've been working across a
+        few threads: aligning models from a handful of preference judgments,
+        and rubric-grounded RLVR to push agent performance in domains that are
+        hard to measure.
+      </p>
+      <p>
+        I like working close to the model itself: the data, the objectives,
+        and the systems that serve it. I'm looking for research roles where I
+        can spend my time on the training stack behind frontier models.
+      </p>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <ul class="roles">
+        <li><span class="org">Qualcomm</span> — Machine Learning Engineer Intern <span class="yr">2026</span></li>
+        <li><span class="org">OpenHands</span> — Machine Learning Engineer <span class="yr">2025</span></li>
+        <li><span class="org">Confluent</span> — Technical Program Manager <span class="yr">2024–25</span></li>
+        <li><span class="org">Philips</span> — AI Engineer Intern <span class="yr">2023</span></li>
+      </ul>
+      <p class="section-note">Full history in my <a href="Tejas_Goyal_CV.pdf">CV</a>.</p>
+    </section>
+
+    <section>
+      <h2>Research</h2>
+      <p class="section-note">With Prof. Jaromir Savelka at CMU's TEEL Lab.</p>
+
+      <article class="paper">
+        <h3>Towards Spec Learning: Inference-Time Alignment from Preference Pairs</h3>
+        <p class="meta">
+          under review, NeurIPS 2026
+          · <a href="https://arxiv.org/abs/2606.24004">arXiv</a>
+        </p>
+        <p>
+          We compile a short instruction and a handful of preference judgments
+          into a natural-language "spec" that steers a model at inference time,
+          with no weight updates. On specialized domains it often beats direct
+          preference optimization trained on far more data, and the spec stays
+          human-readable.
+        </p>
+      </article>
+
+      <article class="paper">
+        <h3>Semantic Span Annotation: An Exploratory Study of LLM Annotation</h3>
+        <p class="meta">
+          ACL 2026, Student Research Workshop
+          · <a href="https://aclanthology.org/2026.acl-srw.39/">paper</a>
+        </p>
+        <p>
+          A study of when handing a model a structured definition of a label
+          helps it annotate expert text, and when it quietly hurts.
+        </p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Selected open source</h2>
+      <ul class="oss">
+        <li>
+          <strong>SGLang</strong> — a frequency-aware radix cache eviction
+          policy for shared-prefix workloads, cutting mean time-to-first-token
+          by 22.8% on Qwen2.5-7B. Runs in production at Cursor, NVIDIA, and xAI.
+          <a href="https://github.com/sgl-project/sglang/pull/23781">#23781</a>
+        </li>
+        <li>
+          <strong>OpenHands</strong> — configurable timeouts for MCP tool calls
+          in an open-source coding-agent SDK used by 65K+ developers.
+          <a href="https://github.com/OpenHands/OpenHands/pull/11029">#11029</a>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Pittsburgh, PA · <a href="mailto:tejasgoyal@cmu.edu">tejasgoyal@cmu.edu</a></p>
+    </footer>
+  </main>
+</body>
+</html>
