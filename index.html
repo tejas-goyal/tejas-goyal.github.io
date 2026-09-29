@@ -35,10 +35,9 @@
     <section class="about">
       <p>
         I'm a master's student at Carnegie Mellon working on post-training and
-        alignment for large language models. Lately I've been working across a
-        few threads: aligning models from a handful of preference judgments,
-        and rubric-grounded RLVR to push agent performance in domains that are
-        hard to measure.
+        alignment for large language models. Lately I've been working on RL
+        for tool-using agents, rubric-based rewards for domains that are hard
+        to verify, and aligning models from a handful of preference judgments.
       </p>
       <p>
         I like working close to the model itself: the data, the objectives,
@@ -61,6 +60,17 @@
     <section>
       <h2>Research</h2>
       <p class="section-note">With Prof. Jaromir Savelka at CMU's TEEL Lab.</p>
+
+      <article class="paper">
+        <h3>Learning to Escalate: Do LLM Agents Generalize Governance Policy to Unseen Rules?</h3>
+        <p class="meta">under review, ICLR 2027</p>
+        <p>
+          We train Qwen2.5-7B tool agents with SFT and then GRPO, holding whole
+          rule families out of training. Restraint transfers to rules the model
+          never saw, but escalation collapses from 99% to 8%, a failure that
+          violation-rate metrics miss.
+        </p>
+      </article>
 
       <article class="paper">
         <h3>Towards Spec Learning: Inference-Time Alignment from Preference Pairs</h3>
@@ -88,6 +98,11 @@
           helps it annotate expert text, and when it quietly hurts.
         </p>
       </article>
+
+      <p class="section-note">
+        Now working on rubric-based reward design for GRPO in hard-to-verify
+        domains, including generating rubrics from preference pairs.
+      </p>
     </section>
 
     <section>
@@ -96,12 +111,13 @@
         <li>
           <strong>SGLang</strong> — a frequency-aware radix cache eviction
           policy for shared-prefix workloads, cutting mean time-to-first-token
-          by 22.8% on Qwen2.5-7B. Runs in production at Cursor, NVIDIA, and xAI.
+          by 22.8% and end-to-end latency by 12.8% on an H100. Runs in
+          production at Cursor, NVIDIA, and xAI.
           <a href="https://github.com/sgl-project/sglang/pull/23781">#23781</a>
         </li>
         <li>
           <strong>OpenHands</strong> — configurable timeouts for MCP tool calls
-          in an open-source coding-agent SDK used by 65K+ developers.
+          in an open-source coding-agent SDK used by 100K+ developers.
           <a href="https://github.com/OpenHands/OpenHands/pull/11029">#11029</a>
         </li>
       </ul>
